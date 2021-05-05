@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="Browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.qa.utility.Reporting"/>
+  </listeners>
+  <test thread-count="5" parallel="methods" name="FunctionalTest(failed)">
+    <parameter name="Url" value="https://www.flipkart.com/"/>
+    <classes>
+      <class name="com.qa.testscript.TC_Flipkart_01">
+        <methods>
+          <include name="FlipkartShopping"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.qa.testscript.TC_Flipkart_01 -->
+    </classes>
+  </test> <!-- FunctionalTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

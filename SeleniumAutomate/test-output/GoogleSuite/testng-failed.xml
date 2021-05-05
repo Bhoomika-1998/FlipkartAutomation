@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [GoogleSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="Url" value="https://www.amazon.in/"/>
+  <test thread-count="5" parallel="methods" name="Functional Test(failed)">
+    <classes>
+      <class name="com.qa.testscript.TC_AmazonCountryNames">
+        <methods>
+          <include name="Select"/>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.qa.testscript.TC_AmazonCountryNames -->
+    </classes>
+  </test> <!-- Functional Test(failed) -->
+</suite> <!-- Failed suite [GoogleSuite] -->
